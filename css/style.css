@@ -1,0 +1,237 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+body{
+    background: rgb(255, 255, 255);
+    color: rgb(28, 24, 82);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;    
+}
+
+header {   
+    background-color: rgb(228, 79, 79);
+    text-align: center;  
+}
+
+.head {   
+    max-width: 1200px;
+    padding: 200px auto;
+}
+
+.gen-list{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.gen-list li a {
+    margin: 0 20px;
+    padding: 5px;
+    color: rgb(253, 253, 253);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.left-block {
+    display: flex;
+}
+
+.left-block {
+    flex: 0 0 auto;
+    margin:10px  10px 0px  0px;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.left-block p {
+    margin: 0px 0px 10px 0px;
+}
+
+.title-2 {
+    background: #fff;  
+    color: rgb(228, 79, 79);
+    cursor: pointer;
+}
+
+section {
+    padding: 5px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 24px 0 24px 0;
+    color: rgb(37, 39, 38);
+    text-align: center;
+}
+
+.level {
+    color: rgb(253, 253, 253);
+    font-size: 18px;
+    margin: 0 0px 5px 0;
+    background: rgb(95, 94, 94);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+.name-level {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 22px;
+    border-bottom: 4px solid rgb(197, 84, 84);   
+    padding: 10px 0;  
+    color: rgb(0, 0, 0);
+}
+
+.inform .title {
+    font-size: 16px;
+    color: rgb(44, 43, 42);
+    margin: 10px 0; 
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+    font-weight: 700;
+}
+
+.inform .list li {
+    font-weight: 700;   
+    display: block;  
+    height: 30px;
+}
+
+.inform .list li:nth-child(1) {
+    color: rgb(34, 66, 207);
+}
+
+.inform .list li:nth-child(2) {
+    color: rgb(56, 192, 44);
+}
+
+.inform .list li:nth-child(3) {
+     color: rgb(150, 47, 47);
+}
+
+.inform {
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+    margin: 0px 0px 300px 0px;
+}
+
+.picture img {
+    height: 300px;   
+}
+
+.exersise  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;  
+}
+
+.norm {     
+    border-bottom: 1px solid rgb(158, 158, 155);
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+.performance {
+    border-bottom: 1px solid rgb(158, 158, 155);
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+.sectional-exercise{
+    border-bottom: 1px solid rgb(158, 158, 155);
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+.improvement {
+    border-bottom: 1px solid rgb(158, 158, 155);
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+.exersise {  
+    border-bottom: 1px solid rgb(158, 158, 155);
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.picture {
+    padding: 10px;
+    background: rgb(179, 178, 175);
+    margin: 0px 20px 20px 0px;
+}
+
+.hide {
+    display: none;
+}
+
+.gen-list li .active {   
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 15px;  
+}
+
+.active_level {
+    color:  rgb(17, 16, 16);   
+    background: rgb(253, 253, 253);
+    border: 2px solid rgb(87, 85, 85); 
+}
+
+@media screen and (max-width: 560px) {
+   
+    .gen-list{
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; 
+        flex-direction: column;        
+    }
+
+    .level {      
+        font-size: 10px;       
+    }
+
+    .gen-list li a {
+        margin: 0 20px;
+        padding: 5px;
+        color: rgb(253, 253, 253);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .gen-list {
+        padding: 0 5px;
+    }
+}
